@@ -1,6 +1,5 @@
 import { INormaledData, INormalizable } from './../types/types'
-
-export default <T extends INormalizable>(list: T[]) => {
+const normalizeData = <T extends INormalizable>(list: T[]) => {
 	const result: INormaledData<T> = { ids: [], entities: {} }
 
 	list.forEach((item) => {
@@ -10,3 +9,5 @@ export default <T extends INormalizable>(list: T[]) => {
 
 	return result
 }
+
+export default normalizeData

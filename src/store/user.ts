@@ -1,4 +1,4 @@
 import { IUser } from '../types/types'
-import { Store } from './store'
+import { CreateStore } from './createStore'
 
-export const user = new Store<IUser>('/users')
+export const user = new CreateStore<IUser>('/users')

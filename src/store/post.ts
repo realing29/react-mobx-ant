@@ -1,4 +1,4 @@
 import { IPost } from '../types/types'
-import { Store } from './store'
+import { CreateStore } from './createStore'
 
-export const post = new Store<IPost>('/posts?_limit=5')
+export const post = new CreateStore<IPost>('/posts')
