@@ -23,7 +23,6 @@ const headerStyle: React.CSSProperties = {
 	alignItems: 'baseline',
 	justifyContent: 'center',
 	color: '#fff',
-	paddingInline: 50,
 	lineHeight: '64px',
 	backgroundColor: '#da01fa',
 	gap: '20px',
@@ -32,7 +31,6 @@ const headerStyle: React.CSSProperties = {
 const contentStyle: React.CSSProperties = {
 	textAlign: 'center',
 	color: '#fff',
-	paddingInline: 50,
 	lineHeight: '64px',
 	backgroundColor: '#fff988',
 }

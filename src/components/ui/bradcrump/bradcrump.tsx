@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Breadcrumb } from 'antd'
 import { HomeOutlined } from '@ant-design/icons'
 import style from './bradcrump.module.sass'
@@ -11,12 +11,15 @@ const MyBredcrump = () => {
 	return (
 		<Breadcrumb className={style.bradcrump}>
 			<Breadcrumb.Item>
-				<Link to='/'>
+				<NavLink
+					to='/'
+					style={({ isActive }) => (isActive ? { cursor: 'default' } : undefined)}
+				>
 					<HomeOutlined />
-				</Link>
+				</NavLink>
 			</Breadcrumb.Item>
 			{breadcrumb.map((item, index) => (
-				<Breadcrumb.Item>
+				<Breadcrumb.Item key={'bread' + index}>
 					{index === breadcrumb.length - 1 ? (
 						<span>{item}</span>
 					) : (

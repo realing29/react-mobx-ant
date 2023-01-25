@@ -13,6 +13,7 @@ const Post = ({ postId }: { postId: number }) => {
 			<img
 				src={`https://picsum.photos/500/500.jpg?random=${Math.random()}`}
 				alt='photos'
+				className={style.image}
 			/>
 			<p>{userItem.name}</p>
 			<Link to={`${postItem.id}`}> Open</Link>

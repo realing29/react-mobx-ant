@@ -19,6 +19,7 @@ const PostPage = () => {
 				<img
 					src={`https://picsum.photos/1200/500.jpg?random=${Math.random()}`}
 					alt='photos'
+					className={style.image}
 				/>
 				<p>{userItem.name}</p>
 				<p>{postItem.body}</p>

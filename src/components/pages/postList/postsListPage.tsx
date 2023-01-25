@@ -26,6 +26,7 @@ const PostsListPage = () => {
 				})}
 			<Pagination
 				showSizeChanger={false}
+				size='small'
 				onChange={handlePaginateChange}
 				pageSize={pageSize}
 				current={current}
